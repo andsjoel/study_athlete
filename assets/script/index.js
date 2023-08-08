@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const password = document.getElementById('password').value;
 
     // Aqui você pode adicionar a lógica de autenticação
-    if (username === 'usuario' && password === 'senha') {
-      alert('Login bem-sucedido!');
-      // Redirecionar para a próxima página após o login bem-sucedido
+    if (username === 'pedrin' && password === 'hype') {
+      window.location.href = 'routine.html';
     } else {
       alert('Credenciais inválidas. Tente novamente.');
     }

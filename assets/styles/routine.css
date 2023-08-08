@@ -46,11 +46,26 @@ body {
 
 .routine-item {
   border: 1px solid #ccc;
+  background-color: #142f52;
+  color: #fff;
   padding: 10px;
   width: 100%;
-  margin: 10px 0;
   border-radius: 5px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.routine-item div {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.routine-durat {
+  margin-right: 45px;
 }
 
 .delete-btn {
@@ -74,25 +89,15 @@ body {
   bottom: 0;
   right: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
-
-  /* animation: modalAppear 0.4s ease-out; */
+  animation: modalAppear 0.4s ease-out;
 }
 
 .modal-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
   color: #fff;
   padding: 20px;
   border-radius: 5px;
   width: 80%;
-  max-width: 400px;
-  transform-origin: bottom right; /* Ponto de origem da transformação */
 }
 
 #new-routine-form {
@@ -135,19 +140,6 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 15px;
-}
-
-@keyframes modalAppear {
-  from {
-      right: -100px;
-      transform: scale(0.5); /* Tamanho inicial */
-      opacity: 0; /* Começa invisível */
-  }
-  to {
-      left: 0px;
-      transform: scale(1); /* Tamanho final */
-      opacity: 1; /* Aparece completamente */
-  }
 }
 
 .close {
