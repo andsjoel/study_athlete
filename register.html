@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/register.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="register-container">
+    <h1 class="title-register">Complete o seu cadastro e faça parte do nosso time de alto rendimento.</h1>
+    <form id="register-form">
+      <input class="input-register" type="text" placeholder="Nome e Sobrenome" required>
+      <div class="idade-gen">
+        <input class="input-register idade" type="number" placeholder="Idade" required>
+      
+        <select class="select" id="gender" required>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+    
+      <input class="input-register" type="text" id="institution-input" placeholder="Instituição" required>
+      <ul id="institution-options" class="institution-options"></ul>
+      
+      <input class="input-register" type="text" placeholder="Matrícula" required>
+      
+      <div class="modalidade">
+        <label for="sport">Modalidade:</label>
+        <select class="select" id="sport" required>
+          <option value="futsal">Futsal</option>
+          <option value="volei">Vôlei</option>
+          <option value="tenis">Tênis</option>
+          <option value="natacao">Natação</option>
+          <option value="ginastica">Ginástica</option>
+        </select>
+      </div>
+
+      <input class="input-register" type="email" placeholder="E-mail" required>
+      <input class="input-register" type="text" placeholder="Usuário" required>
+      <input class="input-register" type="password" placeholder="Senha" required>
+
+      
+      <button class="cadastrar-btn" type="submit">Cadastrar</button>
+    </form>
+  </div>
+  
+  <script src="./assets/script/register.js"></script>
+</body>

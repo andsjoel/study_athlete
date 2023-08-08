@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  margin: 0;
+  padding: 18px;
+  background-color: #72CC96;
+}
+
+.institution-options {
+  list-style-type: none;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 20px;
+  text-align: center;
+  color: #002f6c7e;
+  font-weight: bold;
+}
+
+.institution-options li {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.institution-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.register-container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+#register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-register {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #002F6C;
+  margin-bottom: 45px;
+}
+
+.input-register {
+  height: 28px;
+  background-color: #a9ebc3;
+  border: none;
+  border-radius: 15px;
+  padding-left: 18px;
+  color: #002F6C;
+  font-weight: bold;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.idade {
+  width: 80px;
+}
+
+.input-register::placeholder {
+  color: #002F6C;
+  font-weight: 100;
+}
+
+.idade-gen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gender, #sport {
+  background-color: #002F6C;
+  color: #ffffff;
+  height: 28px;
+  border-radius: 15px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modalidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cadastrar-btn {
+  height: 28px;
+  background-color: #002F6C;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+}
