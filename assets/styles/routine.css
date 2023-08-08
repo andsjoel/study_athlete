@@ -1,0 +1,169 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #002F6C;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.routine-list {
+  width: 100vw;
+  text-align: center;
+}
+
+.routine-list h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#routine-items {
+  list-style: none;
+  padding: 0;
+  background-color: #002F6C;
+}
+
+#new-routine-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  background-color: #72CC96;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #002F6C;
+  border: 1px solid #002F6C;
+  font-size: 15px;
+}
+
+.routine-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: #72CC96;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  /* animation: modalAppear 0.4s ease-out; */
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  transform-origin: bottom right; /* Ponto de origem da transformação */
+}
+
+#new-routine-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.organitazion {
+  display: flex;
+  align-items: center;
+}
+
+.input-register {
+  height: 28px;
+  background-color: #a9ebc3;
+  border: none;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: #002F6C;
+  font-weight: bold;
+  margin: 9px;
+}
+
+#description {
+  width: 200px;
+  height: 45px;
+  resize: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+#duration {
+  width: 60px;
+}
+
+.add-routine {
+  width: 50%;
+  height: 28px;
+  background-color: #002F6C;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+}
+
+@keyframes modalAppear {
+  from {
+      right: -100px;
+      transform: scale(0.5); /* Tamanho inicial */
+      opacity: 0; /* Começa invisível */
+  }
+  to {
+      left: 0px;
+      transform: scale(1); /* Tamanho final */
+      opacity: 1; /* Aparece completamente */
+  }
+}
+
+.close {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  background-color: #72CC96;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #002F6C;
+  border: 1px solid #002F6C;
+  font-size: 15px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/routine.css">
+    <title>App de Rotinas</title>
+</head>
+<body>
+    <div class="routine-list">
+        <h1>Rotinas</h1>
+        <ul id="routine-items">
+            <!-- Rotinas serão adicionadas aqui dinamicamente -->
+        </ul>
+    </div>
+    
+    <div class="modal" id="new-routine-modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <form id="new-routine-form">
+                <div class="organitazion">
+                  <input class="input-register" type="text" id="title" placeholder="Título" required>
+                  <input class="input-register" type="time" id="time" required>
+                </div>
+                
+                <div class="organitazion">
+                  <textarea class="input-register" id="description" rows="3" placeholder="Descrição" required></textarea>
+                  <input class="input-register" type="number" id="duration" placeholder="Duração" required>
+                </div>
+                
+                <button class="add-routine" type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+      <button id="new-routine-btn">+</button>
+    </div>
+    
+    <script src="./assets/script/routine.js"></script>
+</body>
+</html>
