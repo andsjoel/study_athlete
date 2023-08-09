@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Aqui você pode adicionar a lógica de autenticação
     if (username === 'pedrin' && password === 'hype') {
-      window.location.href = 'routine.html';
+      window.location.href = 'home.html';
     } else {
       alert('Credenciais inválidas. Tente novamente.');
     }

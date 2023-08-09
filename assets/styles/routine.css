@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: #002F6C;
@@ -8,7 +6,6 @@ body {
 }
 
 .routine-list {
-  width: 100vw;
   text-align: center;
 }
 
@@ -23,12 +20,11 @@ body {
 #routine-items {
   list-style: none;
   padding: 0;
-  background-color: #002F6C;
 }
 
 #new-routine-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   width: 28px;
   height: 28px;
@@ -46,14 +42,15 @@ body {
 
 .routine-item {
   border: 1px solid #ccc;
-  background-color: #142f52;
-  color: #fff;
-  padding: 10px;
+  background-color: #72CC96;
+  color: #002F6C;
   width: 100%;
+  height: 60px;
   border-radius: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -72,13 +69,14 @@ body {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: #ff4d4d;
-  color: white;
+  background-color: #72CC96;
+  color: #002F6C;
   border: none;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   font-size: 12px;
+  font-weight: bold;
   cursor: pointer;
 }
 

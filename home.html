@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/routine.css">
+  <link rel="stylesheet" href="./assets/styles/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>App de Rotinas</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="content" id="profile-tab">
+            <div class="user-info">
+                <h1>Perfil</h1>
+                <p><strong>Nome e Sobrenome:</strong> <span id="name">Pedro Barcelos</span></p>
+                <p><strong>Idade:</strong> <span id="age">15 anos</span></p>
+                <p><strong>Gênero:</strong> <span id="gender">Masculino</span></p>
+                <p><strong>Instituição:</strong> <span id="institution">Colégio Nacional</span></p>
+                <p><strong>Matrícula:</strong> <span id="registration">TEST123</span></p>
+                <p><strong>Email:</strong> <span id="email">pedrin@hype.com</span></p>
+                <p><strong>Usuário:</strong> <span id="username">pedrin</span></p>
+            </div>
+            <button id="reset-password">Redefinir Senha</button>
+        </div>
+        <div class="content" id="workout-tab">
+            <h1>Treinos</h1>
+            <p>Conteúdo dos treinos...</p>
+        </div>
+        <div class="content" id="routine-tab">
+            <div class="routine-list">
+                <h1>Rotinas</h1>
+                <ul id="routine-items">
+                    <!-- Rotinas serão adicionadas aqui dinamicamente -->
+                </ul>
+            </div>
+            
+            <div class="modal" id="new-routine-modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal">&times;</span>
+                    <form id="new-routine-form">
+                        <div class="organitazion">
+                          <input class="input-register" type="text" id="title" placeholder="Título" required>
+                          <input class="input-register" type="time" id="time" required>
+                        </div>
+                        
+                        <div class="organitazion">
+                          <textarea class="input-register" id="description" rows="3" placeholder="Descrição" required></textarea>
+                          <input class="input-register" type="number" id="duration" placeholder="Duração" required>
+                        </div>
+                        
+                        <button class="add-routine" type="submit">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div>
+              <button id="new-routine-btn">+</button>
+            </div>
+        </div>
+        <div class="content" id="week-tab">
+            <h1>Semana</h1>
+            <p>Conteúdo da semana...</p>
+        </div>
+        <nav class="bottom-nav">
+          <a href="#" class="nav-item"><i class="fas fa-user"></i></a>
+          <a href="#" class="nav-item"><i class="fas fa-dumbbell"></i></a>
+          <a href="#" class="nav-item"><i class="fas fa-calendar-alt"></i></a>
+          <a href="#" class="nav-item"><i class="fas fa-calendar-week"></i></a>
+        </nav>
+    </div>
+    <script src="./assets/script/home.js"></script>
+    <script src="./assets/script/routine.js"></script>
+</body>
+</html>
